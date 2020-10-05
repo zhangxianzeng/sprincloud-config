@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>layui在线调试</title>
+  <style>
+    body{margin: 10px;}
+    .demo-carousel{height: 200px; line-height: 200px; text-align: center;}
+  </style>
+  <script src="/js/jquery.js"></script>
+</head>
+<body>
+ 
+<button id="btn" onclick="threeFn()">点我</button>
+<h3 id="aaa"></h3>
+
+<script>
+ 
+    function threeFn(){
+        alert("请求了！！！");
+        //向服务端发送删除指令
+        $.ajax({
+            type: "get",
+            url: "/api/n/name",
+             data: {},
+        cache : false,
+        dataType:"json",
+            success: function (data){
+                alert(data.name);    
+　　　　　　　　  //取json中的name，打印在页面中document.getElementById("aaa").innerHTML=data.name; 
+            }  
+        });
+        }
+</script>
+</body>
+</html>
