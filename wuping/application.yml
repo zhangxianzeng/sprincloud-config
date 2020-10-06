@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangxianzeng/sprincloud-config.git
+          searchPaths: wuping
+          username: zhangxianzeng  # 以及相应的账户名
+          password: ZHANGxian102699
+        default-label: main
