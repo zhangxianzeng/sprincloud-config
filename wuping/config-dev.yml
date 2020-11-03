@@ -1,2 +1,2 @@
 config:
-  info: "jdbc:mysql://localhost:123456/99999?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false"
+  info: "jdbc:mysql://localhost:123456/oooo?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false"
